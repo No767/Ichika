@@ -9,7 +9,7 @@ load_dotenv()
 Discord_Bot_Token = os.getenv("Michiko")
 intents = discord.Intents.default()
 intents.members = True
-bot = commands.Bot(help_command=None)
+bot = bridge.Bot(command_prefix=".", help_command=None)
 
 # Loads in all extensions
 initial_extensions = [
